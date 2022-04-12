@@ -1,1 +1,9 @@
-
+server:
+  port: 9527
+spring:
+  application:
+    name: lanca-auth # 项目名称-且会被nacos作为服务名，默认分组 DEFAULT_GROUP
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # nacos服务地址
