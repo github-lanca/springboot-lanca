@@ -1,13 +1,13 @@
-package cn.lanca;
+package cn.lanca.xxljob;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LancaCommonApplication {
+public class LancaXxljobApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LancaCommonApplication.class, args);
+        SpringApplication.run(LancaXxljobApplication.class, args);
     }
 
 }
