@@ -37,6 +37,8 @@ public class Common3 {
     private String a6 = "";
     @ExcelProperty(value = "7终端毛利率", index = 7)
     private String a7 = "";
+    @ExcelProperty(value = "8网店商品分组", index = 8)
+    private String a8 = "";
 
     private String key3 = "";
 

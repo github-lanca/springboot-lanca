@@ -1,4 +1,4 @@
-package cn.lanca.common.controller;
+package cn.lanca.common.controller.v1;
 
 import cn.lanca.common.util.tool.ExcelUtil;
 import cn.lanca.common.vo.excel.CommonA;
@@ -14,14 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * project name:<font size = "1"><b>小芄健康数据运营平台</b></font><br>
- * file name:<font size = "1"><b>TODO</b></font><br>
- * description:<font size = "1"><b>TODO</b></font><br>
- * company name:<font size = "1"><b>小芄医药科技（成都）有限公司-研发中心</b></font><br>
- *
- * @author <a href="mail to: meihongliang@xiaowanjiankang.com" rel="nofollow">meihongliang<br>
- * @version 1.0.0<br>
- * @since [1] [2022/4/12 14:31] [meihongliang] [新建] <br>
+ * @since  2022/4/12 14:31 meihongliang
  */
 public class TestA {
 
