@@ -38,19 +38,19 @@ public class Common3 {
     @ExcelProperty(value = "7终端毛利率", index = 7)
     private String a7 = "";
 
+    private String key3 = "";
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Common3)) return false;
         Common3 common3 = (Common3) o;
         return
-                Objects.equals(getA1(), common3.getA1())
-                        && Objects.equals(getA3(), common3.getA3())
-                        && Objects.equals(getA4(), common3.getA4());
+                Objects.equals(getKey3(), common3.getKey3());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getA1(), getA3(), getA4());
+        return Objects.hash(getKey3());
     }
 }

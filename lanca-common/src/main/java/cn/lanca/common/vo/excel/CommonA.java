@@ -75,6 +75,6 @@ public class CommonA {
     @ExcelProperty(value = "药品规格", index = 22)
     private String c2 = "";
 
-    private String key = "";
+    private String key3 = "";
 
 }
