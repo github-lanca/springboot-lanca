@@ -36,6 +36,21 @@ public class ExcelUtil {
     }
 
     /**
+     * 读取excel
+     *
+     * @param excelFilePath excel文件路径
+     * @param t             那个类
+     * @param <T>           传入类型
+     * @return List<T>
+     * @throws FileNotFoundException
+     */
+    public static <T> List<T> readExcel(String excelFilePath, Class<T> t, Integer sheetNo) throws FileNotFoundException {
+        ExcelListener<T> excelListener = new ExcelListener<>();
+        EasyExcel.read(new FileInputStream(excelFilePath), t, excelListener).sheet(sheetNo).doRead();
+        return excelListener.getObjs();
+    }
+
+    /**
      * 写入excel
      *
      * @param list          list
@@ -44,7 +59,7 @@ public class ExcelUtil {
      * @param <T>           传入类型
      */
     public static <T> void writeExcel(List<T> list, Class<T> t, String excelFilePath) {
-        EasyExcel.write(excelFilePath, t).sheet(list.size() + "").doWrite(list);
+        EasyExcel.write(excelFilePath, t).sheet("0_" + list.size()).doWrite(list);
     }
 
     /**
